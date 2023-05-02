@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="https://kit.fontawesome.com/f18be361ac.js" crossorigin="anonymous"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgYUw2-j8mrkt-cPp5NB7OHBnZuOBMVL8&callback=initMap">
+</script>
+</script>
+
+<title>Request our services </title>
+</head>
+
+<body>
+  <div class="webContainer">
+    <div class="mainNav">
+      <div class="logoBox">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+      <nav class="pageNavigation hideMobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="callToAction">
+        <a href="request.html">Request Mechanic</a>
+      </div>
+    </div>
+
+    <!-- <a href=" https://wa.me/260973001614?text=I'm%20interested%20in%20your%20car%20for%20sale">request help</a> -->
+ 
+
+
+
+    <main>
+      <div class="headerContainerGeneral">
+        <h4>Where are you requesting our services from?</h4>
+      </div>
+      <div class="mainContentRequest">
+        <div class="requestServiceLeft">
+          <div class="estimatedBox">
+
+          </div>
+          <div class="flexTwoInpt">
+            <div>
+              <label for="location">Current Location:</label>
+              <br>
+              <div class="locationContainer">
+                <i class="fas fa-map-marker-alt location-icon" onclick="getLocation()"></i>
+                <span id="displayLocation"></span>
+              </div>
+            </div>
+            
+            <div>
+              <label for="phone">Phone number:</label>
+              <div class="locationContainer">
+                <input type="number" id="phoneNumber" name="phone" class="location-input" placeholder="Enter your phone number">
+                <i class="fas fa-phone-alt location-icon"></i>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </div>
+
+        <div class="requestServiceRight">
+          <div class="containForm">
+            <form class="requestForm" action="./request.html">
+              <input type="hidden" name="lat" id="lat" value="">
+              <input type="hidden" name="lng" id="lng" value="">
+              <input type="hidden" id="locationNameReversed" name="location" class="location-input" placeholder="Enter your current location">
+              <div>
+                <label class="formLabelSmall" for="brand">Brand:</label>
+              <select class="requestFormInputs" id="brand" name="brand">
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Nissan">Nissan</option>
+              </select>
+              </div>
+    
+    
+              <div>
+                <label class="formLabelSmall" for="model">Model:</label>
+              <select class="requestFormInputs" id="model" name="model">
+                <option value="Camry">Camry</option>
+                <option value="Accord">Accord</option>
+                <option value="F-150">F-150</option>
+                <option value="Silverado">Silverado</option>
+                <option value="Altima">Altima</option>
+              </select>
+              </div>
+    
+              <div>
+                <label class="formLabelSmall" for="year">Year:</label>
+              <select class="requestFormInputs" id="year" name="year">
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+              </select>
+              </div>
+    
+              <div class="requestFormInputs" id="containBtn">
+                <input type="submit" name="submit" value="Request"
+                  id="requestButton" />
+              </div>
+    
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <section class="mainMapArea" id="map">
+      loading map...
+    </section>
+ 
+    <footer>
+      <p>
+        Contact us
+      </p>
+      <p>
+        <a href="mailto:
+          ">
+          inquiry@repair.com
+        </a>
+      </p>
+      <p>
+        +260973335385
+      </p>
+      <p>
+        Lusaka, Zambia
+      </p>
+    </footer>
+
+   
+
+  <script src="js/main.js"></script>
+  <script src="./js/request.js"></script>
+</body>
+</html>

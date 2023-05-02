@@ -1,0 +1,602 @@
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.webContainer {
+  width: 100vw;
+  min-height: 100vh;
+}
+.mainNav {
+  /* background: #f49e3b; */
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activeNav {
+  font-weight: bold;
+}
+.logoBox {
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  margin-left: 20px;
+}
+
+.callToAction {
+  margin-right: 15px;
+}
+.callToAction a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #244cb3;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+.heroText {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.callToAction a:hover {
+  background: #fff;
+  color: #244cb3;
+  transition: 0.5s;
+}
+
+.pageNavigation ul {
+  padding: 10px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageNavigation ul li {
+  padding: 0 20px;
+}
+.pageNavigation ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.requestForm div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin-left: 0.4rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+}
+
+.formLabelSmall {
+  font-size: 0.7rem;
+  color: #999;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.heroSection {
+  background: url(../img/newhero.jpg) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  min-height: 60vh;
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.heroSectionServices {
+  background: url(../img/services.jpg) no-repeat center center;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.heroSectionContact {
+  background: url(../img/contact.jpg) no-repeat center center;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.contactSect {
+  text-align: center;
+}
+.contactSect ul {
+  list-style: none;
+}
+.heroSectionAbout {
+  background: url(../img/about.jpg) no-repeat center center;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.hero {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.heroSectionRequest {
+  background: url(../images/hero-bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.hero {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.requestForm {
+  width: 49%;
+  min-width: 320px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 35px;
+}
+
+.requestFormInputs {
+  width: 70%;
+  flex: 1;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  color: #555;
+  background-color: #f3f3f3;
+  font-size: 1rem;
+}
+
+#requestButton {
+  width: 200px;
+  height: 60px;
+  flex: 1;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8rem;
+  position: absolute;
+  background: #f49e3b;
+  left: 10px;
+  top: -20px;
+
+  border-radius: 30px;
+}
+
+#requestButton:hover {
+  background: #a76b28;
+  transition: 0.5s;
+}
+
+#containBtn {
+  position: relative;
+  background-color: #fff !important;
+}
+
+.mainContent {
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 1020px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.flexTwoInpt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexTwoInpt div {
+  margin-left: 1rem;
+  width: 100%;
+}
+.mainContentRequest {
+  padding: 20px;
+
+  max-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.showMobile {
+  display: none;
+}
+p a {
+  color: #fff;
+}
+.headerContainerGeneral {
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+}
+.mainContentRequest .requestServiceLeft {
+  width: 60%;
+}
+.mainContent .leftContent {
+  width: 40%;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.mainContent .leftContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.mainContent .leftContent p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.mainMapArea {
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.mainContent .leftContent .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f49e3b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.containForm {
+  background-color: pink;
+  width: 100%;
+  /* padding: 20px; */
+  position: relative;
+}
+.mainContent .leftContent .button:hover {
+  background: #a76b28;
+  transition: 0.5s;
+}
+
+.containForm .requestForm {
+  width: 100%;
+}
+.estimatedBox {
+  width: 100%;
+
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 2rem;
+  border-radius: 20px;
+}
+.mainContentRequest .requestServiceRight {
+  width: 60%;
+  height: 30px;
+  margin-top: 70px;
+}
+.mainContent .rightContent {
+  width: 40%;
+  padding: 5px;
+}
+
+.mainContent .rightContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.mainContent .rightContent p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  padding: 10px 20px;
+  background: #f49e3b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-start;
+  float: right;
+}
+
+.floarRight {
+  float: left;
+}
+
+.readMore:hover {
+  background: #a76b28;
+  transition: 0.5s;
+}
+
+.brandsSection {
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 1020px;
+
+  align-items: center;
+}
+
+.location-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.locationContainer {
+  position: relative;
+}
+.location-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: #888;
+}
+
+.location-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #aaa;
+}
+
+.brandsSection h2 {
+  text-align: center;
+}
+
+.brandLister {
+  margin-top: 50px;
+
+  list-style: none;
+  display: flex;
+}
+
+.brandLister li {
+  flex: 1;
+  margin-right: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grayBackground {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f2f2f2;
+}
+
+.aboutusMainSection {
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 1020px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.servicesMainSection {
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 1020px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.aboutusMainSection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.servicesMainSection p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.servicesMainSection ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  list-style: decimal;
+}
+.servicesMainSection ul li {
+  margin-bottom: 1rem;
+}
+.aboutusMainSection span {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.aboutusMainSection p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.aboutusMainSection img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.heroSectionMobile {
+  width: 100%;
+  height: 400px;
+  max-height: 40vh;
+  position: relative;
+}
+.overlayContainImage {
+  position: absolute;
+}
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #f49e3b;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+footer img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+footer p {
+  margin-top: 1rem;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.socialMedia a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+#contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+#contact-form label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+#contact-form input[type='text'],
+#contact-form input[type='email'],
+#contact-form input[type='tel'],
+#contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-form input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.containForm {
+  position: relative;
+}
+#contact-form input[type='submit']:hover {
+  background-color: #3e8e41;
+}
+@media screen and (max-width: 1019px) {
+  .mainContent {
+    flex-direction: column;
+  }
+  .brandLister {
+    flex-direction: column;
+  }
+  #requestButton {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 0;
+    top: 0;
+    left: 0;
+  }
+  .requestForm {
+    flex-direction: column;
+  }
+  .requestForm div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .mainContent .leftContent {
+    width: 100%;
+    margin-right: 0;
+  }
+  .mobileFlexer {
+    display: flex;
+    justify-content: center;
+  }
+  .mainContent .rightContent {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+  .showMobile {
+    display: block;
+  }
+}
